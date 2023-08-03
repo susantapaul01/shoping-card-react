@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Card</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <section class="py-3 bg-body-secondary">
+        <div class="container-fiuid">
+            <h4 class="text-center">Select Your Product</h4>
+        </div>
+    </section>
+    <section class="mt-2">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-8">
+                <div class="row row-cols-6" id="cardHolder">
+                    <!-- <div class="col">
+                        <div class="card mb-4">
+                            <img src="./images/camera1.jpg" class="card-img-top product-img" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Camara</h5>
+                                <p class="card-text">prise: <span class="product-prise">35000</span></p>
+                                <div class="d-grid">
+                                    <button type="button" class="btn btn-outline-dark shop-item-button">Add to Card</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-4">
+                            <img src="./images/headphone1.jpg" class="card-img-top product-img" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Head Phone</h5>
+                                <p class="card-text">prise: <span class="product-prise">2500</span></p>
+                                <div class="d-grid">
+                                    <button type="button" class="btn btn-outline-dark shop-item-button">Add to Card</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-4">
+                            <img src="./images/mobile1.jpg" class="card-img-top product-img" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Mobile</h5>
+                                <p class="card-text">prise: <span class="product-prise">14000</span></p>
+                                <div class="d-grid">
+                                    <button type="button" class="btn btn-outline-dark shop-item-button">Add to Card</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-4">
+                            <img src="./images/shoe1.jpg" class="card-img-top product-img" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Shoe</h5>
+                                <p class="card-text">prise: <span class="product-prise">2800</span></p>
+                                <div class="d-grid">
+                                    <button type="button" class="btn btn-outline-dark shop-item-button">Add to Card</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-4">
+                            <img src="./images/watch1.jpg" class="card-img-top product-img" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Watch</h5>
+                                <p class="card-text">prise: <span class="product-prise">18000</span></p>
+                                <div class="d-grid">
+                                    <button type="button" class="btn btn-outline-dark shop-item-button">Add to Card</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                </div>
+                <div class="col-sm-4" id="myCard">
+                    <h4 class="text-center">Your Card</h4>
+                    <table class="table bg-info">
+                        <div class="d-flex mb-2 border-bottom border-black">
+                            <div class="me-auto p-2">
+                                <button id="clear-card-btn" class="btn btn-danger fw-bold">Card Clear</button>
+                            </div>
+                            <div class="p-2 fw-bold">Total :</div>
+                            <div class="p-2 fw-bold" id="totalPrice">0</div>
+                        </div>
+                        <thead>
+                          <tr>
+                            <th scope="col" style="width: 40%">Item</th>
+                            <th scope="col" style="width: 15%">Each Price</th>
+                            <th scope="col" class="text-end">Quantity</th>
+                          </tr>
+                        </thead>
+                        <tbody id="activeCardBody">
+                          <!-- <tr class="card-row">
+                            <td class="d-flex flex-row">
+                                <img src="./images/camera1.jpg" class="" alt="" srcset="" style="width: 30%; height: auto">
+                                <p class="cardProductName">Camara</p>
+                            </td>
+                            <td class="cardPrice">6000</td>
+                            <td>
+                                <input type="number" value="1" class="card-qty-input" size="2">
+                                <button type="button btn-sm" class="btn btn-danger">Remove</button>
+                            </td>
+                          </tr>
+                          <tr class="card-row">
+                            <td class="d-flex flex-row">
+                                <img src="./images/camera2.jpg" class="" alt="" srcset="" style="width: 30%; height: auto">
+                                <p class="cardProductName">Watch</p>
+                            </td>
+                            <td class="cardPrice">10000</td>
+                            <td>
+                                <input type="number" value="1" class="card-qty-input" size="2">
+                                <button type="button btn-sm" class="btn btn-danger">Remove</button>
+                            </td>
+                          </tr>
+                          <tr class="card-row">
+                            <td class="d-flex flex-row">
+                                <img src="./images/camera3.jpg" class="" alt="" srcset="" style="width: 30%; height: auto">
+                                <p class="cardProductName">Mobile</p>
+                            </td>
+                            <td class="cardPrice">8000</td>
+                            <td>
+                                <input type="number" value="1" class="card-qty-input" size="2">
+                                <button type="button btn-sm" class="btn btn-danger">Remove</button>
+                            </td>
+                          </tr> -->
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./popper.min.js"></script>
+    <script src="./bootstrap.bundle.min.js"></script>
+    <script src="./main.js" synce></script>
+    <script src="./demo.js" synce></script>
+</body>
+</html>
